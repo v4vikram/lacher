@@ -1345,6 +1345,10 @@ video {
   font-size: 35px;
 }
 
+.text-\[30px\] {
+  font-size: 30px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1611,6 +1615,10 @@ video {
     padding-top: 50px;
   }
 
+  .md\:pl-\[80px\] {
+    padding-left: 80px;
+  }
+
   .md\:text-start {
     text-align: start;
   }
@@ -1667,6 +1675,10 @@ video {
 
   .lg\:ml-\[18px\] {
     margin-left: 18px;
+  }
+
+  .lg\:mt-\[50px\] {
+    margin-top: 50px;
   }
 
   .lg\:block {

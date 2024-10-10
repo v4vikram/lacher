@@ -725,6 +725,16 @@ opacity: 1;
         width: 65%;
         margin: auto;
     }
+    .read-items img {
+        width: 50% !important;
+        margin: auto;
+    }
+    .process-bg::after {
+        width: 100%;
+    }
+    .process-bg {
+        padding: 20px 10px;
+    }
 }
 
 

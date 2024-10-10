@@ -147,7 +147,8 @@ $(document).ready(function () {
       responsive: {
         0: {
           items: 1,
-          stagePadding: 15,
+          margin: 20,
+          stagePadding: 0,
         },
         768: {
           items: 1,
