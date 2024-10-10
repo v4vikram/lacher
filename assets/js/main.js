@@ -1,28 +1,29 @@
 $(document).ready(function () {
   function stickyHeader() {
-    var header = $("#middle-wrappe");
 
-    var sticky = header.offset().top; // Get the initial offset position of the header
+    var header = $("#desktop-header .middle-wrapper");
+  var sticky = header.offset().top; // Get the initial offset position of the header
 
-    $(window).scroll(function () {
-      if (window.scrollY > sticky) {
-        // Use window.scrollY instead of pageYOffset
-        header.addClass("sticky"); // Add the sticky class to the header when you reach its scroll position
-      } else {
-        header.removeClass("sticky"); // Remove the sticky class when you leave the scroll position
-      }
-    });
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > sticky) {
+      header.addClass("sticky-header"); // Add the sticky class when scroll position is reached
+    } else {
+      header.removeClass("sticky-header"); // Remove the sticky class when not scrolled
+    }
+  });
   }
-  // stickyHeader();
+  stickyHeader();
 
   function mobileMenu() {
     $("#toggle-hamburger").click(function () {
       $(".mobile-header").toggleClass("active-mobile-header");
+      $("body").toggleClass("body-hidden");
     });
 
     $(".mobile-header ul li").click(function () {
       $(this).find(".sub-menu").slideToggle(400);
-      $(this).find("i").toggleClass("rotate-down-arrow");
+      // $(this).find("i").toggleClass("rotate-down-arrow");
+      $(this).find(".plus-icon").toggleClass("no-after");
     });
   }
   mobileMenu();
@@ -80,19 +81,28 @@ $(document).ready(function () {
       center: true,
       nav: true,
       margin: 10,
-      dots: true,
+      dots: true, // Enable dots for both screen sizes
       loop: true,
       touchDrag: true,
       pullDrag: true,
       mouseDrag: true,
-      dotsContainer: ".banner-custom-dots",
+      responsive: {
+        0: {
+          nav: false,
+          dotsContainer: false, // Use default dots on small screens
+        },
+        768: {
+          dotsContainer: ".banner-custom-dots", // Use custom dots on larger screens
+        }
+      }
     });
-
-    // banner slider custom dots
+    
+    // Apply custom text to the custom dots
     var customTexts = ["New Arrivals", "Limited Edition", "product_3"];
     $(".banner-custom-dots .owl-dot").each(function (index) {
       $(this).text(customTexts[index]);
     });
+    
 
     $(".collections").owlCarousel({
       loop: true,
@@ -140,11 +150,11 @@ $(document).ready(function () {
           stagePadding: 15,
         },
         768: {
-          items: 2,
+          items: 1,
           stagePadding: 15,
         },
         1024: {
-          items: 3,
+          items: 1,
           stagePadding: 20,
         },
         1366: {
