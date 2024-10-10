@@ -608,6 +608,13 @@ opacity: 1;
     border-radius: 100px;
     margin-top: 20px;
 }
+.desktop-img{
+    display: block !important;
+}
+
+.phone-img{
+    display: none !important;
+}
 
 @media(max-width: 1024px) {
 
@@ -738,6 +745,12 @@ opacity: 1;
     .mobile-header nav a {
         margin-top: 20px;
         font-size: 20px;
+    }
+    .desktop-img{
+        display: none !important;
+    }
+    .phone-img{
+        display: block !important;
     }
 }
 

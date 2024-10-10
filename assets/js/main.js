@@ -132,37 +132,33 @@ $(document).ready(function () {
     });
     
     $(".process").owlCarousel({
-      loop: true,
+      autoplay: false,
       smartSpeed: 1000,
-      margin: 30,
-      nav: false,
-      autoWidth: false,
-      dots: true,
-      touchDrag: false,
-        pullDrag: false,
-        mouseDrag:false,
-      dotsContainer: ".process-custom-dots",
-      animateIn: "animateIn", 
-      // animateOut: "animateOut",
+      items: 1,
+      stagePadding: 0,
+      center: true,
+      nav: true,
+      margin: 10,
+      dots: true, // Enable dots for both screen sizes
+      loop: true,
+      touchDrag: true,
+      pullDrag: true,
+      mouseDrag: true,
       responsive: {
         0: {
-          items: 1,
-          margin: 20,
-          stagePadding: 0,
+          nav: false,
+          dotsContainer: false, // Use default dots on small screens
         },
         768: {
-          items: 1,
-          stagePadding: 15,
+          dotsContainer: ".process-custom-dots", // Use custom dots on larger screens
         },
         1024: {
-          items: 1,
-          stagePadding: 20,
+          dotsContainer: ".process-custom-dots", // Use custom dots on larger screens
         },
         1366: {
-          items: 1,
-          stagePadding: 9,
-        },
-      },
+          dotsContainer: ".process-custom-dots", // Use custom dots on larger screens
+        }
+      }
     });
 
     // process custom dots
