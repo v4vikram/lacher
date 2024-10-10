@@ -735,6 +735,10 @@ opacity: 1;
     .process-bg {
         padding: 20px 10px;
     }
+    .mobile-header nav a {
+        margin-top: 17px;
+        font-size: 17px;
+    }
 }
 
 
