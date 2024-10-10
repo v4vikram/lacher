@@ -721,6 +721,10 @@ opacity: 1;
         top: 134px;
         padding-top: 0px;
     }
+    .clip-img {
+        width: 65%;
+        margin: auto;
+    }
 }
 
 
