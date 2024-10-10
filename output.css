@@ -1230,6 +1230,11 @@ video {
   padding-bottom: 18px;
 }
 
+.py-\[16px\] {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .pb-\[5vh\] {
   padding-bottom: 5vh;
 }
