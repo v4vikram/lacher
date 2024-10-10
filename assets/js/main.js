@@ -88,7 +88,7 @@ $(document).ready(function () {
       dotsContainer: ".banner-custom-dots",
     });
 
-    // Custom text for each dot
+    // banner slider custom dots
     var customTexts = ["New Arrivals", "Limited Edition", "product_3"];
     $(".banner-custom-dots .owl-dot").each(function (index) {
       $(this).text(customTexts[index]);
@@ -132,8 +132,8 @@ $(document).ready(function () {
         pullDrag: false,
         mouseDrag:false,
       dotsContainer: ".process-custom-dots",
-      animateIn: "animateIn", // Fade animation on large screens
-      animateOut: "animateOut", // Fade animation on large screens
+      animateIn: "animateIn", 
+      // animateOut: "animateOut",
       responsive: {
         0: {
           items: 1,
@@ -154,13 +154,14 @@ $(document).ready(function () {
       },
     });
 
-    // Custom text for each dot
-    var customTexts = ["Our Process", "Community", "Commitement"];
+    // process custom dots
+    var processCustomTexts = ["Our Process", "Community", "Commitement"];
 
     // Add custom text to each dot after Owl Carousel initializes
     $(".process-custom-dots .owl-dot").each(function (index) {
-      $(this).text(customTexts[index]);
+      $(this).text(processCustomTexts[index]);
     });
+    
     $(".write-read").owlCarousel({
       loop: true,
       smartSpeed: 1000,
