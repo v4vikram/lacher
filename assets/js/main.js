@@ -120,14 +120,18 @@ $(document).ready(function () {
         },
       },
     });
+    
     $(".process").owlCarousel({
       loop: true,
       smartSpeed: 1000,
       margin: 30,
-      nav: true,
+      nav: false,
       autoWidth: false,
       dots: true,
-      dotsContainer: ".custom-dots",
+      touchDrag: false,
+        pullDrag: false,
+        mouseDrag:false,
+      dotsContainer: ".process-custom-dots",
       animateIn: "animateIn", // Fade animation on large screens
       animateOut: "animateOut", // Fade animation on large screens
       responsive: {
@@ -154,7 +158,7 @@ $(document).ready(function () {
     var customTexts = ["Our Process", "Community", "Commitement"];
 
     // Add custom text to each dot after Owl Carousel initializes
-    $(".custom-dots .owl-dot").each(function (index) {
+    $(".process-custom-dots .owl-dot").each(function (index) {
       $(this).text(customTexts[index]);
     });
     $(".write-read").owlCarousel({
