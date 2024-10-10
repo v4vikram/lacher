@@ -1,0 +1,751 @@
+@import url('./font.css');
+
+:root {
+    --white: #fff;
+    --green: #196136;
+    --darkGreen: #132b1b;
+    --lightGreen: #d1dfd7;
+    --yellow: #f7ca16;
+    --gray: #cccccc;
+    --black: #000;
+    --greenHover: #028753;
+    --transition: all 0.3s ease;
+}
+
+*,
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Philosopher", sans-serif;
+}
+
+p,
+label,a, li {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.custom-width {
+    width: calc(100% - 20px);
+    max-width: 1300px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/* ====================================== */
+
+/* Desktop Header */
+#desktop-header ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#desktop-header ul li a {
+    display: inline-block;
+    line-height: 60px;
+}
+
+#desktop-header ul li ul {
+    display: none;
+    position: absolute;
+    background: white;
+    margin-top: 0px;
+    width: 100%;
+    max-width: 170px;
+    box-shadow: 2px 2px 10px 0px #686868;
+    padding: 10px;
+    z-index: 9999;
+}
+
+#desktop-header ul li ul li a {
+    line-height: 40px;
+    display: block;
+}
+
+#desktop-header ul li ul li a {
+    color: var(--green);
+}
+
+#desktop-header ul li:hover ul {
+    display: block;
+
+}
+
+
+/* Container for dropdown and search */
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray);
+    border-radius: 50px;
+    padding: 0px 10px;
+    background-color: var(--white);
+    width: 100%;
+}
+
+/* Styles for dropdown */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    padding: 10px 13px;
+    font-size: 14px;
+    color: var(--black);
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 52px;
+}
+
+.dropdown-toggle::after {
+    content: "vikram";
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    height: 400px;
+    width: 1px;
+    background-color: var(--gray);
+}
+
+.dropdown-toggle i {
+    margin-left: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px;
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border-radius: 5px;
+    overflow: hidden;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.dropdown-menu a {
+    color: var(--black);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.open .dropdown-menu {
+    display: block;
+}
+
+/* Input field */
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #666;
+    width: 40%;
+}
+
+/* Search button */
+.search-button {
+    background-color: var(--green);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* 24/7 support section */
+.support-box {
+    border: 1px solid #ccc;
+}
+
+
+
+.support-box i {
+    color: var(--green);
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.support-box i:hover {
+    color: var(--greenHover);
+}
+
+/* Circular icons */
+.icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+.circle-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle-icon i {
+    font-size: 18px;
+}
+
+.circle-icon:hover {
+    background-color: var(--greenHover);
+}
+
+/* ========= Nav Menu ============ */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Ensure the header is above other content */
+}
+
+nav a {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+nav a li {
+    margin-right: 30px;
+
+}
+
+.mobile-header {
+    position: fixed;
+    left: -100%;
+    top: 134px;
+    height: 100vh;
+    width: 100%;
+    padding-left: 24px;
+    transition: all 0.7s ease;
+    z-index: 9999;
+}
+
+.active-mobile-header {
+    left: 0%;
+}
+
+.mobile-header .sub-menu {
+    display: none;
+}
+
+.rotate-down-arrow {
+    transform: rotate(180deg);
+}
+
+/* ============== Banner slider ================== */
+.banner-slide-left,
+.banner-slide-middle,
+.banner-slide-right {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.banner-slide-middle {
+    height: 100%;
+    background-color: var(--green);
+
+}
+
+.banner-slider .owl-nav {
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    /* transform: translateY(-50%); */
+    margin-top: 0px;
+}
+
+.banner-slider .owl-nav button,
+.banner-slider .owl-nav button:hover {
+    background-color: transparent !important;
+    color: var(--green);
+}
+
+.banner-slider .owl-nav span {
+    font-size: 50px;
+    color: var(--green);
+}
+
+.banner-custom-dots {
+    display: flex;
+    justify-content: center;
+    /* gap: 1.5rem; */
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+    z-index: 999;
+}
+
+.banner-custom-dots button {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 12px;
+}
+
+.banner-custom-dots button::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 43%;
+    width: 20px;
+    height: 3px;
+    background-color: var(--green);
+}
+
+.banner-custom-dots button.owl-dot.active {
+    opacity: 0.6;
+}
+
+.desktop-banner {
+    display: block !important;
+}
+
+.phone-banner {
+    display: none !important;
+}
+
+/* Container for the marquee */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* background-color: #f5f5f5; */
+    padding: 10px 0;
+    /* border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content that will scroll */
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Scroll animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Duplicate the marquee content */
+.marquee-content span {
+    display: inline-block;
+    padding-right: 50px;
+    /* Space between repeated content */
+}
+ /* ======= Shop by age ==========  */
+/* .clip-img{
+    clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 100%, 80% 100%, 0% 100%, 0% 75%, 0% 0%);
+    overflow: hidden;
+}
+.clip-img2{
+    clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 100%, 80% 100%, 0% 100%, 0% 75%, 0% 0%);
+    overflow: hidden;
+} */
+.car-content{
+
+}
+.product-items {
+    transition: all 0.5s ease;
+}
+
+.hover-effect {
+    /* border: 1px solid red; */
+    position: relative;
+    /* height: 0px;  */
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+/* Set a specific height for the expanded state */
+.product-items:hover .hover-effect {
+    height: 45px; /* Set this to the maximum height you need */
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+/* product info */
+.product-info {
+    background-color: var(--white);
+    transform: translateY(50px);
+    transition: var(--transition);
+}
+
+.eyes-link{
+    opacity: 0;
+    transition: var(--transition);
+}
+.product-items:hover .eyes-link {
+opacity: 1;
+}
+.product-items:hover .product-info {
+    transform: translateY(0px);
+}
+.collections .owl-nav,
+.write-read .owl-nav
+{
+    position: absolute;
+    top: -115px;
+    right: 0;
+}
+.collection-items{
+    /* margin-top: 80px; */
+}
+.owl-carousel .owl-nav button,
+.owl-carousel .owl-nav button:hover
+{
+    background-color: transparent !important;
+}
+.collections .owl-prev span,
+.collections .owl-next span,
+
+.write-read .owl-prev span,
+.write-read .owl-next span
+{
+   font-size: 50px;
+   color: var(--green);
+}
+
+/* process section */
+.process-bg{
+    position: relative;
+    padding: 50px 200px 50px 70px;
+}
+.process-bg::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: var(--green);
+    width: 78%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+}
+.footer ul li{
+    margin-bottom: 20px;
+}
+.bottom-white-line {
+    position: relative;
+    padding-bottom: 3vh;
+}
+
+.bottom-white-line::before {
+    position: absolute;
+    content: "";
+    width: 8vh;
+    height: 0.9vh;
+    background-color: var(--white);
+    bottom: 0vh;
+    /* bottom: 0.2vh solid var(--yellow); */
+}
+.dropdown-container select {
+    border: 2px solid var(--darkGreen);
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+/* ======= footer ========= */
+@media(max-width: 1024px) {
+    .mobile-header nav a {
+        color: var(--green);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+
+    .mobile-header ul li ul {
+        margin-left: 15px;
+
+    }
+
+    .mobile-header {
+        padding-left: 0px;
+        /* padding: 0px 10px; */
+    }
+
+    .desktop-banner {
+        display: none !important;
+    }
+
+    .phone-banner {
+        display: block !important;
+    }
+}
+
+@media(max-width: 767px) {
+    .dropdown-toggle {
+        padding: 0px;
+        width: 125px;
+        font-size: 12px;
+    }
+
+    .search-form {
+        /* overflow-x: hidden; */
+    }
+
+    .search-container input[type="text"] {
+        width: 25%;
+    }
+    .dropdown-container select {
+        font-size: 12px;
+        padding: 12px 0px;
+        border: 2px solid #bababa;
+    }
+
+    /* product info */
+    .product-items .product-info {
+        transform: translateY(0px);
+    }
+    .collections .owl-nav,
+    .write-read .owl-nav
+    {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========= Checkbox ============ */
+.checkbox-hidden {
+    display: none;
+}
+
+.show-less {
+    display: none;
+}
+
+.bottom-line {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.bottom-line::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    width: 26px;
+    height: 4px;
+    background-color: var(--green);
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 12px;
+
+}
+
+.filters {
+    border: 1px solid var(--gray);
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.orderby {
+    border: 1px solid var(--gray);
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: var(--darkGreen);
+}
