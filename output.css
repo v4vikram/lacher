@@ -1225,6 +1225,11 @@ video {
   padding-bottom: 50px;
 }
 
+.py-\[18px\] {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 .pb-\[5vh\] {
   padding-bottom: 5vh;
 }
@@ -1518,6 +1523,10 @@ video {
 
   .md\:mt-\[-50px\] {
     margin-top: -50px;
+  }
+
+  .md\:ml-\[0px\] {
+    margin-left: 0px;
   }
 
   .md\:block {
