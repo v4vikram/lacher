@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Owl.css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <!-- Font Awesome.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- main.css -->
+    <!-- <link href="./assets/css/main.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <!-- custom.css -->
+    <link href="./assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <!-- Desktop header -->
+    <header class="block xl:block" id="desktop-header">
+        <!-- top -->
+        <div class="top-wrapper bg-yellow py-[10px] text-center">
+            <div class="custom-width">
+                <p class="text-black text-[14px] font-semibold">Pre-School Sale 🔥 Up to 25% Off – Educational Toys for
+                    Early Learning!</p>
+            </div>
+        </div>
+
+        <div class="wrapper-for-sticky">
+            <!-- middle -->
+            <div class="middle-wrapper py-[10px] bg-white" id="middle-wrapper">
+                <div class="custom-width">
+                    <div class="flex justify-between items-center">
+                        <div class="logo col-span-1. w-[25%] xl:w-[10%]">
+                            <a href="index.html">
+                                <img src="assets/img/svg/logo.svg" alt="lacher-logo" class="w-[130px] header-logo">
+                            </a>
+                        </div>
+                        <div class="search-container col-span-7. w-[100%] xl:w-[55%] ml-auto hidden lg:block">
+
+                            <form action="" method="post" class="search-form">
+                                <div class="custom-dropdown">
+                                    <button class="dropdown-toggle">
+                                        Select Category
+                                        <!-- <i class="fas fa-bars"></i> -->
+                                        <img src="assets/img/dropdown-hamburger.png" alt="dropdown-hamburger"
+                                            class="pl-2">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#">Dolls</a>
+                                        <a href="#">Educational Toy</a>
+                                        <a href="#">Games and Puzzles</a>
+                                        <a href="#">Indoor Play</a>
+                                        <a href="#">Kids Books</a>
+                                        <a href="#">Outdoor Toy</a>
+                                        <a href="#">Rockers & Rides</a>
+                                        <a href="#">Toy Figures</a>
+                                        <a href="#">Vehicles Toys</a>
+                                    </div>
+                                </div>
+
+                                <input type="text" placeholder="Type Your Products ..." />
+
+                                <button class="search-button hover:bg-greenHover transition duration-300">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="middle-right-side col-snap-4. w-[28%]">
+                            <div class="contact-support flex items-center justify-end gap-x-5">
+                                <!-- Support box with phone number -->
+                                <a href="tel:8880000000"
+                                    class="support-box hidden items-center py-[7px] px-[20px] rounded-full xl:flex">
+                                    <img src="assets/img/svg/phone.svg" alt="phone" class="w-[25px] mr-[5px]">
+                                    <!-- <i class="fas fa-phone-alt"></i> -->
+                                    <div>
+                                        <p>24/7 support</p>
+                                        <p>&nbsp;-888-0000-000</p>
+                                    </div>
+                                </a>
+
+                                <!-- Circular icons -->
+                                <div class="icon-container">
+                                    <div class="circle-icon flex items-center">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="circle-icon flex items-center">
+                                        <i class="fas fa-shopping-basket"></i>
+                                    </div>
+                                    <div class="circle-icon flex items-center">
+                                        <div id="toggle-hamburger">
+                                            <i class="fas fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- bottom -->
+            <div class="bottom-wrapper bg-darkGrreen py-[0px] hidden xl:block">
+                <div class="custom-width">
+                    <nav class="flex items-center justify-between">
+                        <ul class="">
+                            <li> <a href="#" class="">Categories <i class="fas fa-angle-down text-white"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Category 1</a></li>
+                                    <li><a href="#">Category 1</a></li>
+                                    <li><a href="#">Category 1</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="about.html" class="">About</a></li>
+                            <li> <a href="#" class="">Child Development</a></li>
+                            <li> <a href="#" class="">Sustainability</a></li>
+                            <li> <a href="#" class="">Blog</a></li>
+                            <li> <a href="contact.html" class="">Contact</a></li>
+                        </ul>
+                        <div class="flex items-center space-x-4. bg-yellow rounded-full space-x-2 py-[10px] px-[12px]">
+                            <img src="assets/img/svg/fire.svg" alt="green-fire-icon" class="w-[24px]">
+                            <a href="#" class="bg-yellow-400 text-green font-bold">Super Deals
+                                Product</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- only phone -->
+        <!-- <div class="bg-lightGray py-[5px]">
+        <div class="custom-width block md:hidden mt-[0px]">
+            <div class="icon-container flex justify-between items-center">
+                <div class="circle-icon flex">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="flex justify-between items-center gap-x-2">
+                    <div class="circle-icon flex items-center">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="circle-icon flex items-center">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div> -->
+    </header>
+
+    <!--  Phone header -->
+    <header class="block xl:block mobile-header bg-white" id="phone-header">
+        <div class="custom-width">
+            <div class="middle-wrapper py-[10px]">
+                <div class="block  items-center">
+                    <div class="search-container col-span-7. w-[100%] ">
+
+                        <form action="" method="post" class="search-form">
+                            <div class="custom-dropdown">
+                                <button class="dropdown-toggle">
+                                    Select Category
+                                    <!-- <i class="fas fa-bars"></i> -->
+                                    <img src="assets/img/dropdown-hamburger.png" alt="dropdown-hamburger" class="pl-2">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="#">Dolls</a>
+                                    <a href="#">Educational Toy</a>
+                                    <a href="#">Games and Puzzles</a>
+                                    <a href="#">Indoor Play</a>
+                                    <a href="#">Kids Books</a>
+                                    <a href="#">Outdoor Toy</a>
+                                    <a href="#">Rockers & Rides</a>
+                                    <a href="#">Toy Figures</a>
+                                    <a href="#">Vehicles Toys</a>
+                                </div>
+                            </div>
+
+                            <input type="text" placeholder="Type Your Products ..." />
+
+                            <button class="search-button hover:bg-greenHover transition duration-300">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="middle-right-side  w-[100%]">
+                        <div class="contact-support flex items-center justify-end gap-x-5">
+                            <!-- Support box with phone number -->
+                            <!-- <a href="#" class="support-box flex items-center py-[7px] px-[20px] rounded-full">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <p>24/7 support</p>
+                                    <p>&nbsp;-888-0000-000</p>
+                                </div>
+                            </a> -->
+
+                            <!-- Circular icons -->
+                            <!-- <div class="icon-container">
+                                <div class="circle-icon flex items-center justify-center">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="circle-icon flex items-center justify-center">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                                <div class="circle-icon flex items-center justify-center">
+                                    <div id="toggle-hamburger">
+
+                                        <i class="fas fa-bars"></i>
+                                    </div>
+                                </div>
+                      
+                            </div> -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-wrapper bg-white py-[10px]">
+            <div class="custom-width">
+                <nav class="">
+                    <ul class="">
+                        <li> <a href="#" class="">Categories <div class="plus-icon"></div></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="about.html" class="">About</a></li>
+                        <li> <a href="#" class="">Child Development</a></li>
+                        <li> <a href="#" class="">Sustainability</a></li>
+                        <li> <a href="#" class="">Blog</a></li>
+                        <li> <a href="contact.html" class="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper bg-lightGray">
+        <div class="breadcrumb custom-width h-[50px] flex items-center">
+            <p class="text-darkGrreen capitalize">Home
+
+                <span class="text-green">> About Us</span>
+            </p>
+        </div>
+    </div>
+
+    <main class="lg:w-[85%] mx-auto">
+        <section class="mt-[50px]">
+            <div class="custom-width">
+                <div class="text-center mb-[20px] md:mb-[35px]">
+                    <h2
+                        class="text-green text-[25px] leading-[25px] md:text-[35px] md:leading-[40px] text-center font-bold">
+                        Delve into Our Tradition
+                    </h2>
+                    <img src="assets/img/about-banner-1.webp" alt="about-banner-1" class="w-full block md:hidden mt-[30px]">
+                    <p class="mt-[15px]">Welcome to our world, where tradition meets play, and every toy tells a story
+                    </p>
+                </div>
+                <div class="text-center  w-full lg:w-[85%]. m-auto">
+                    <p class="text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">In the heart of India, nestled in Karnataka, lies the quaint town of Channapatna, often called
+                        the "Toy Town" of India. In a world increasingly driven by technology and synthetic materials,
+                        the charm of traditional, handmade wooden toys is a breath of fresh air. Renowned for its
+                        exquisite craftsmanship, Channapatna has been producing eco-friendly wooden toys for centuries.
+                        These toys, deeply rooted in Indian tradition, are not only a testament to the town's rich
+                        cultural heritage but also a beacon of sustainable living. Among the many brands that have
+                        emerged from this tradition, "LACHER" stands out as a pioneer in reviving and promoting
+                        Channapatna toys on a global scale, and in doing so, promoting sustainable living. We infuse
+                        this timeless tradition with a contemporary edge. Our purpose is simple yet profound: to guide
+                        children toward embracing responsibility through clever, sustainable wooden toys. </p>
+                </div>
+                <div class="mt-[25px] text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">
+                    <img src="assets/img/about-banner-1.webp" alt="about-banner-1" class="w-full hidden md:block">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-[50px]">
+            <div class="custom-width">
+                <div class="text-center mb-[25px] md:mb-[35px]">
+                    <h2
+                        class="text-green text-[25px] leading-[25px] md:text-[35px] md:leading-[40px] text-center font-bold">
+                        The Genesis of Lacher
+                    </h2>
+                </div>
+                <div class="text-center  w-full lg:w-[85%]. m-auto">
+                    <img src="assets/img/genesis-1.webp" alt="genesis-1" class="w-full block md:hidden mt-[30px] mb-[25px]">
+                    <p class="text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">Lacher's journey began with its founders' simple yet profound realization: the world was
+                        increasingly leaning towards mass-produced plastic toys that were not only harmful to the
+                        environment but also lacked the cultural richness and educational value of traditional toys. In
+                        an era dominated by technology and synthetic materials, there was a pressing need to reconnect
+                        with nature and heritage. This realization led the founders to Channapatna, where they were
+                        captivated by the town's age-old tradition of crafting wooden toys.</p>
+                        <img src="assets/img/genesis-2.webp" alt="genesis-2" class="w-full block md:hidden mt-[30px]">
+                </div>
+                <div class=" mt-[25px] md:mt-[35px]">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-x-[2rem]">
+                        <div>
+                            <img src="assets/img/genesis-1.webp" alt="genesis-1" class="w-full hidden md:block">
+                        </div>
+                        <div>
+                            <img src="assets/img/genesis-2.webp" alt="genesis-2" class="w-full hidden md:block">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center w-full lg:w-[85%]. m-auto">
+                    <p class="mt-[0px] mb-[25px] md:mt-[40px] md:mb-[40px]">The founders, a group of environmentally
+                        conscious entrepreneurs and artisans, were determined to bring the timeless charm of Channapatna
+                        toys to the forefront. They aimed to create a brand that would honor Indian craftsmanship while
+                        also advocating for sustainability. Offering toys that encourage meaningful interactions between
+                        parents and children, thereby supporting early development and bonding, Lacher was thus
+                        established—a brand deeply rooted in tradition yet embracing a modern perspective.</p>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-[50px]">
+            <div class="custom-width">
+                <div class="text-center mb-[20px] md:mb-[35px]">
+                    <h2
+                        class="text-green text-[25px] leading-[25px] md:text-[35px] md:leading-[40px] text-center font-bold">
+                        Delve into Our Tradition
+                    </h2>
+
+                    <div class="mt-[25px] text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">
+                        <img src="assets/img/about-banner-1.webp" alt="about-banner-1" class="w-full">
+                    </div>
+                </div>
+                <div class="text-center  w-full lg:w-[85%]. m-auto">
+                    <p class="mb-[30px] text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">The art of making Channapatna toys, known as "Gombegala Ooru" in Kannada, dates
+                        back to the reign of Tipu Sultan in the 18th century. Tipu Sultan invited Persian artisans to
+                        train the local artisans, blending Persian techniques with local expertise. This fusion resulted
+                        in the unique style of Channapatna toys, characterized by their vibrant colors, smooth finish,
+                        and intricate designs. Our artisans, with their unwavering dedication, skill, and creativity,
+                        craft exquisite handmade products at our factory. Their commitment to their craft is evident in
+                        every production stage, from turning and carving to painting and quality inspection. </p>
+                    <p class="mb-[30px] text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">Making Channapatna toys involves several stages, each requiring high skill and
+                        craftsmanship. The primary material used is ivory wood, known for its durability and smooth
+                        texture. The wood is first seasoned to reduce moisture content, making it suitable for carving.
+                        Artisans then shape the wood into various forms using traditional hand tools. Once the basic
+                        shape is achieved, the toys undergo meticulous sanding to create a smooth surface. They are then
+                        dipped in lac, a natural resin obtained from the secretion of lac insects. This process, known
+                        as lacquering, not only gives the toys their glossy finish but also ensures their safety. The
+                        final step involves painting the toys with natural dyes derived from vegetable and mineral
+                        sources, making them safe for children</p>
+                    <p class="mb-[30px] text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">We are devoted to supporting our artisans and ensuring their well-being in
+                        times of uncertainty. Discover the timeless elegance of traditional craftsmanship through our
+                        beautifully handmade products, and join us in admiring and respecting the dedication of our
+                        artisans.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-[50px]">
+            <div class="custom-width">
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-x-[20px] items-center">
+                <div class="col-span-1 md:col-span-4">
+                  <img src="assets/img/mission.webp" alt="mission" class="w-full hidden md:block md:h-[380px] xl:h-auto">
+                </div>
+                <div class="col-span-1 md:col-span-8">
+                  <h2 class="text-green text-[25px] leading-[25px] md:text-[35px] md:leading-[40px] text-center md:text-start font-bold">
+                    Lacher's Mission
+                  </h2>
+                  <img src="assets/img/mission.webp" alt="mission" class="w-full block md:hidden mt-[30px]">
+                  <p class="mt-[10px] text-center md:text-start text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">(Reviving Tradition and Promoting Sustainability)</p>
+                  <p class="mt-[20px] text-center md:text-start text-[14px] leading-[22px] md:text-[16px] md:leading-[23px] text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">
+                    LACHER is more than just a brand; it is a movement towards a more sustainable future. We not only bring the beauty and craftsmanship of Channapatna to a global audience but also significantly impact the local community. Lacher's mission is to revive the traditional art of Channapatna toy-making and promote sustainable living. The brand is committed to preserving this ancient craft by providing local artisans with fair wages and sustainable employment. By doing so, Lacher ensures that the skills and knowledge of these artisans are passed down through generations, keeping the tradition alive. In addition to preserving heritage, Lacher is dedicated to promoting sustainability. The brand's eco-friendly toys use natural materials and processes that minimize environmental impact. By choosing Lacher Toys, consumers are making a conscious decision to support sustainable practices and reduce their carbon footprint.
+                  </p>
+                </div>
+              </div>
+              <p class="mt-[40px] text-center md:text-start text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">
+                At LACHER, we believe in the power of education. Through our website, social media channels, and community outreach programs, we aim to educate parents and children about the benefits of wooden toys and the rich cultural heritage of Channapatna. Our toys are designed to foster early development, social interaction, and a deep love for nature. By providing children with safe, non-toxic, and environmentally responsible toys, we aim to instill a profound sense of stewardship for the planet from a young age. This early exposure to sustainable practices is crucial in shaping children's values and can shape them into creative, adaptable, and environmentally responsible individuals. We offer a range of resources, including articles, videos, and workshops, to help parents make informed choices about the toys they buy for their children. Our educational content covers various topics, from the history and making of Channapatna toys to the environmental impact of plastic toys and the benefits of wooden toys for child development.
+              </p>
+            </div>
+          </section>
+
+          <section class="mt-[50px]">
+            <div class="custom-width">
+             <div class="grid grid-cols-1 md:grid-cols-12 gap-x-[50px] items-center">
+                 <div class="col-span-1 md:col-span-8">
+                     <h2 class="text-green text-[25px] leading-[25px] md:text-[35px] md:leading-[40px] text-center md:text-start font-bold">
+                         Lacher's Vision
+                     </h2>
+                     <img src="assets/img/vision.webp" alt="vision" class="w-full block md:hidden mt-[30px]">
+                     <p class="mt-[10px] text-center md:text-start text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">(Educating and Inspiring the Next Generation)</p>
+     
+                     <p class="mt-[20px] text-center md:text-start text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">Lacher envisions a world where traditional crafts and sustainable living are preserved and celebrated. The brand believes in the power of education and aims to inspire the next generation to appreciate and embrace eco-friendly practices. Lacher's vision extends beyond just selling toys; it is about creating a movement that fosters a deep connection with nature and heritage.
+                     </p>
+                     <p class="mt-[20px] text-center md:text-start text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">"We believe that small changes can make a big difference", and by promoting sustainable practices, we can contribute to the preservation and sustainability of our environment. Our journey is just beginning, and we are excited to see what the future holds. We are committed to continuously improving our products and practices, ensuring we remain at the forefront of the eco-friendly toy market. Through innovation, education, and a deep respect for tradition, we aim to inspire a generation of socially engaged and environmentally conscious children who will shape a better future for our planet. 
+                     </p>
+                 </div>
+                 <div class="col-span-1 md:col-span-4">
+                     <img src="assets/img/vision.webp" alt="vision" class="w-full hidden md:block md:h-[400px] xl:h-auto">
+                 </div>
+             </div>
+           
+            </div>
+         </section>
+          
+         <section class="mt-[50px] md:mb-[70px] lg:mb-auto">
+            <div class="custom-width">
+                <div class="text-center mb-[20px] md:mb-[35px]">
+                    <h2 class="text-green text-[25px] leading-[25px] md:text-[35px] md:leading-[40px] text-center font-bold">
+                        Lacher: Fostering Relationships,<br>
+                        Strengthening Bonds
+                    </h2>
+                    <div class="mt-[20px]">
+                        <img src="assets/img/about-banner-1.webp" alt="about-banner-1" class="w-full">
+                    </div>
+                </div>
+                <div class="text-center  w-full lg:w-[85%]. m-auto">
+                    <p class="mt-[25px] text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">Lacher's journey from a simple idea to a pioneering brand is a testament to the power of tradition; it's a link between tradition and the contemporary world. As Lacher grows, its commitment to tradition, sustainability, and education remains unwavering. The brand's positioning reminds us that even in a rapidly changing world, there is immense value in reconnecting with our roots and making conscious choices that benefit both people and the planet. Each twist of wood and brushstroke of color in our toys embodies the echoes of tradition, the warmth of craftsmanship, and the promise of endless joy. Be part of this magical narrative; every toy is a chapter waiting to be added to your family's story. 
+                    </p>
+                    <p class="mt-[35px] text-[14px] leading-[22px] md:text-[16px] md:leading-[23px]">We invite you to join us on this journey, connect with the artisans, and bring a part of Channapatna's rich cultural heritage into your home. When you hold our toys, you're not just having a product but a piece of history and a story to be shared through generations.
+                    </p>
+                </div>
+               
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-[0px] md:mt-[-50px] overflow-hidden">
+        <img src="assets/img/svg/footer-curve.svg" alt="footer-curve" class="mb-[-2px] w-[102%]">
+        <div class="footer-wrapper bg-textDarkGreen text-white pt-[50px]">
+            <div class="custom-width">
+                <div class="">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+
+                        <!-- Left Section - Logo and Contact Info -->
+                        <div>
+                            <a href="index.html">
+                                <img src="assets/img/svg/logo.svg" alt="Lacher Logo" class="mb-4 w-[130px]">
+                            </a>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur. Id fames there are many vulputate
+                                eget
+                                dolor.</p>
+                            <ul>
+                                <li class="flex items-center mb-3">
+                                    <i class="fas fa-map-marker-alt mr-2"></i>
+                                    <span>5091 Elgin St. Celina, Delaware 10299</span>
+                                </li>
+                                <li class="flex items-center mb-3">
+                                    <i class="fas fa-phone mr-2"></i>
+                                    <span>+00-1234-456789</span>
+                                </li>
+                                <li class="flex items-center mb-3">
+                                    <i class="fas fa-envelope mr-2"></i>
+                                    <span>you@example.com</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-phone mr-2"></i>
+                                    <span>+00-1234-55000</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Middle Section 1 - Services -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4 bottom-white-line">Services</h3>
+                            <ul>
+                                <li>Service Offerings</li>
+                                <li>How It Works</li>
+                                <li>Pricing Table</li>
+                                <li>Service Areas</li>
+                                <li>Service FAQs</li>
+                                <li>Contact Information</li>
+                            </ul>
+                        </div>
+
+                        <!-- Middle Section 2 - Customer Support -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4 bottom-white-line">Customer Support</h3>
+                            <ul>
+                                <li class="mb-2"><a href="#" class="hover:underline">Contact Us</a></li>
+                                <li class="mb-2"><a href="#" class="hover:underline">Store List</a></li>
+                                <li class="mb-2"><a href="#" class="hover:underline">Opening Hours</a></li>
+                                <li class="mb-2"><a href="#" class="hover:underline">Returns & Exchanges</a></li>
+                                <li class="mb-2"><a href="#" class="hover:underline">Refund and Returns</a></li>
+                                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Right Section - Newsletter and Social Icons -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4 bottom-white-line">Subscribe Our Newsletter</h3>
+                            <p class="mb-7">With our newsletter, you'll never miss an important update.</p>
+                            <div class="search-container col-span-7. w-[100%] ml-auto  xl:block">
+
+                                <form action="" method="post" class="search-form py-[5px]">
+                                    <input type="text" placeholder="Email Address">
+
+                                    <button class="search-button hover:bg-greenHover transition duration-300">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="flex space-x-4 mt-7 justify-center md:justify-start">
+                                <a href="#" class="">
+                                    <img src="assets/img/svg/twitter.svg" alt="twitter" class="w-[21px]">
+                                </a>
+                                <a href="#" class="">
+                                    <img src="assets/img/svg/facebook.svg" alt="facebook" class="w-[12px]">
+                                </a>
+                                <a href="#" class="">
+                                    <img src="assets/img/svg/linkedin.svg" alt="linkedin" class="w-[21px]">
+                                </a>
+                                <a href="#" class="">
+                                    <img src="assets/img/svg/instagram.svg" alt="instagram" class="w-[21px]">
+                                </a>
+                                <a href="#" class="">
+                                    <img src="assets/img/svg/tik-tok.svg" alt="tik-tok" class="w-[21px]">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Footer Bottom -->
+                    <div class="text-white text-center py-[20px] lg:py-[50px]">
+                        <p>© 2024 Lacher. All Rights Reserved by Lacher</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Jquery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Owl.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Main.js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
