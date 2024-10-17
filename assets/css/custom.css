@@ -878,6 +878,18 @@ textarea:focus-visible
     font-weight: bold;
     color: #306f3b;
 }
+.contact-page footer{
+    position: relative;
+    z-index: 10;
+}
+/* faq start */
+/* .plus-icon {
+    transition: transform 0.3s ease;
+}
+
+.plus-icon.rotate {
+    transform: rotate(45deg);
+} */
 
 @media(max-width: 1024px) {
 

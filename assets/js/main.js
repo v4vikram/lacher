@@ -296,8 +296,8 @@ $(document).ready(function () {
 
   function priceRangeFilter(){
     const slider = document.getElementById('price-slider');
-
-    noUiSlider.create(slider, {
+    if(slider){
+      noUiSlider.create(slider, {
         start: [20, 80],
         connect: true,
         range: {
@@ -321,7 +321,29 @@ $(document).ready(function () {
         minValue.textContent = values[0];
         maxValue.textContent = values[1];
     });
+    }
+
+
   }
   priceRangeFilter()
   
+  function faqAccordian() {
+    $(".faq-toggle").on("click", function() {
+        var content = $(this).next(".faq-content");
+
+        // Close all FAQ contents except the one being clicked
+        $(".faq-content").not(content).slideUp(100);
+        
+        // Toggle the current FAQ content
+        content.slideToggle(100);
+
+        // Remove the "no-after" class from all plus icons except the one being clicked
+        $(".plus-icon").not($(this).find(".plus-icon")).removeClass("no-after");
+        
+        // Toggle the "no-after" class on the clicked one
+        $(this).find(".plus-icon").toggleClass("no-after");
+    });
+}
+
+  faqAccordian()
 });
